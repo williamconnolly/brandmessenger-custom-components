@@ -1,47 +1,52 @@
-# Vite Shadcn Boilerplate
+# Brand Messenger Custom Components Example
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/vite-shadcn-boilerplate/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/lithiumtech/brandmessenger-custom-components/blob/main/LICENSE)
 
 ## Overview
+This is an example project that demonstrates how to build custom components for the Brand Messenger platform using Vite, Shadcn, React, Tailwind CSS, and TypeScript. The UI was bootstrapped with https://v0.dev/.
 
-Welcome to the Vite Shadcn Boilerplate! This repository serves as a comprehensive starter template for rapidly setting up a Vite project integrated with Shadcn, React, Tailwind CSS, and TypeScript. With this boilerplate, you can jumpstart your development process, saving valuable time on configuration and setup.
+`window.KHOROS_CONFIG.customComponents` is designed to be usable by any frontend framework, or vanilla Javascript, so the frameworks used in this project are just examples.
 
-## Features
+## Important Files:
+1. [src/main-in-parent.js](src/main-in-parent.js) - Example file with the code that goes into the top level page, instructing Brand Messenger to use this custom component.
+2. [src/main.tsx](src/main.tsx) - The entry point to the bundle file that gets inserted into the widget iframe, defined by [src/main-in-parent.js](src/main-in-parent.js). 
 
-- **Vite**: Lightning-fast development server and build tool for modern web development.
-- **Shadcn**: A powerful state management library for React, ensuring efficient and predictable state handling.
-- **React**: A popular JavaScript library for building user interfaces.
-- **Tailwind CSS**: A utility-first CSS framework that provides a set of pre-designed styles for rapid UI development.
-- **TypeScript**: A superset of JavaScript that adds static types, enhancing code quality and developer productivity.
+The rest of the files in this repository are related to the specific implementation of this example UI and can be disregarded.
 
 ## Getting Started
 
-1. **Fork the Repository**: Start by forking this repository to your GitHub account.
-
-2. **Clone the Repository**: Clone your forked repository locally using the following command:
-
+1. 
     ```bash
-    git clone https://github.com/your-username/vite-shadcn-boilerplate.git
+    git clone https://github.com/lithiumtech/brandmessenger-custom-components.git
     ```
 
-3. **Install Dependencies**: Navigate to the project directory and install the required dependencies.
+2. **Install Dependencies**: Navigate to the project directory and install the required dependencies.
 
     ```bash
-    cd vite-shadcn-boilerplate
     npm install
     ```
 
-4. **Run the Development Server**: Launch the development server to start building your application.
+3. **Run the Development Server**: Launch the development server to start building your application.
 
     ```bash
     npm run dev
     ```
 
-5. **Build for Production**: When you're ready to deploy your application, create a production build.
+4. **Build for Production**: When you're ready to deploy your application, create a production build.
 
     ```bash
     npm run build
     ```
+
+## Frameworks Used
+
+- **Vite**: Lightning-fast development server and build tool for modern web development.
+- **Shadcn**: A component library intended to be copy-pasted rather than installed as a dependency, offering flexibility.
+- **React**: A popular JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework that provides a set of pre-designed styles for rapid UI development.
+- **TypeScript**: A superset of JavaScript that adds static types, enhancing code quality and developer productivity.
+
+
 
 ## Included Libraries
 
@@ -70,11 +75,3 @@ Welcome to the Vite Shadcn Boilerplate! This repository serves as a comprehensiv
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contribution
-
-Contributions are welcome! Feel free to open issues or submit pull requests to enhance this boilerplate and make it even more powerful.
-
----
-
-**Happy coding!** 🚀
